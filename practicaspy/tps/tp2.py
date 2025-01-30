@@ -55,15 +55,15 @@ funcion_local()
 """
 
 def funcion_extra(parametro1, parametro2):
-    for i in range(1, 101):
-        if i % 3 == 0 and i % 5 == 0:
+    for num in range(1, 101):
+        if num % 3 == 0 and num % 5 == 0:
             print(parametro1 + " " + parametro2)
-        elif i % 3 == 0:
+        elif num % 3 == 0:
             print(parametro1)
-        elif i % 5 == 0:
+        elif num % 5 == 0:
             print(parametro2)
         else:
-            print(i)
-    return i
+            print(num)
+    return num
 
 print(funcion_extra("fizz", "buzz"))

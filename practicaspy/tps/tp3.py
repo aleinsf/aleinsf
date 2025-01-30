@@ -68,23 +68,24 @@ def agenda():
         elif operacion == "2":
             nombre = input("Introduce el nombre del contacto: ")
             telefono = input("Introduce el teléfono del contacto: ").strip()
-            print(repr(telefono))
-            if telefono.isdigit() and len(telefono) >= 10:
+            if telefono.isdigit() and len(telefono) == 10:
                 contactos[nombre] = telefono
+                print("El contacto " + nombre + " ha sido añadido")
             else:
                 print("Número de teléfono no válido")
         elif operacion == "3":
             nombre = input("Introduce el nombre del contacto: ")
             telefono = input("Introduce el teléfono del contacto: ").strip()
-            print(repr(telefono))
-            if telefono.isdigit() and len(telefono) >= 10:
+            if telefono.isdigit() and len(telefono) == 10:
                 contactos[nombre] = telefono
+                print("El contacto " + nombre + " ha sido actualizado")
             else:
                 print("Número de teléfono no válido")
         elif operacion == "4":
             nombre = input("Introduce el nombre del contacto: ")
             if nombre in contactos:
                 del contactos[nombre]
+                print("El contacto " + nombre + " ha sido eliminado")
             else:
                 print("El contacto no existe")
         elif operacion == "5":
@@ -93,6 +94,3 @@ def agenda():
             print("Operación no válida")
 
 agenda()    
-
-############ ARREGLAR NUMERO
-# https://www.w3schools.com/python/python_dictionaries.asp
