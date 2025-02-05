@@ -33,14 +33,16 @@ def factorial(n: int):
 factorial(-2) 
 
 
+
 def fibo(num: int) -> int:
-    if num < 0:
-        print("Numero no valido (negativo)") 
-    elif num == 0:
+    if num <= 0:
+        print("Numero no valido (negativo)")
         return 0
     elif num == 1:
+        return 0
+    elif num == 2:
         return 1
     else:
-        return fibo(num + 1) + fibo(num - 2)
+        return fibo(num - 1) + fibo(num - 2)
 
-fibo(2)
+print(fibo(11))

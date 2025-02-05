@@ -83,11 +83,11 @@ def programa(palabra1, palabra2):
     elif palabra1 not in anagramas and palabra2 not in anagramas:
         print(f"{palabra1} y {palabra2} no son anagramas")
     
-    if len(set(palabra1)) == len(palabra1)
+    if len(set(palabra1)) == len(palabra1):
         print(f"{palabra1} es isograma")
     else:
         print(f"{palabra1} no es isograma")
-    if len(set(palabra2)) == len(palabra2)
+    if len(set(palabra2)) == len(palabra2):
         print(f"{palabra2} es isograma")
     else:
         print(f"{palabra2} no es isograma")
@@ -95,10 +95,3 @@ def programa(palabra1, palabra2):
 print(programa("oso", "ramon")) # True
 
         
-    
-    
-
-    
-
-
-print(programa("oso")) # True
