@@ -76,13 +76,37 @@ def stack_web():
             stack.append(action)  
 
         if len(stack) > 0:
-            print(f"Has navegado a la URL: {stack[len(stack) - 1]}.")
+            print(f"Has navegado a la URL: {stack[-1]}.")
         else:
             print("Has navegado a la pagina de inicio")
 
 stack_web()
 
 
-# {stack[len(stack) - 1]}  
-# {stack[len(stack) - 1]}
-# {stack[len(stack) - 1]}
+def impresora():
+
+    queue = []
+
+    while True:
+        
+        action = input(
+            "salir/imprimir/agregar archivo "
+        )
+
+        if action == "salir":
+            print("Saliendo de la impresora")
+            break
+        elif action == "imprimir":
+            if len(queue) > 0: 
+                print(f"Imprimiendo {(queue.pop(0))}")
+            else:
+                print("no hay archivos wachin")
+        else:
+            queue.append(action)
+            print(f"Agregando: {action} a la lista")
+
+
+impresora()
+
+
+            
