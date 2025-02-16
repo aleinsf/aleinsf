@@ -130,8 +130,7 @@ def gestion():
                         quantity = int(components[1])
                         price = float(components[2])
                         total += quantity * price
-                    else:
-                        print("El nombre del producto no esta listado :(")
+                    
             print(total) 
         elif action == "8":
             break
