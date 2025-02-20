@@ -21,9 +21,7 @@ import unittest as ut
 
 def suma(a, b):
 
-    suma = a + b
-    print(suma)
-suma(2, 4)
+    return a + b
 
 
 class TestSuma(ut.TestCase):
